@@ -30,7 +30,7 @@ const Menu2 = () => {
 					<p className="menu_title_p1">
 						ORGANIZATION <span>CHART</span>
 					</p>
-					<p className="menu_title_p2">Industrial Total Solutions</p>
+					<p className="menu_title_p2">Sustainable Operation & Robust Framework.</p>
 				</section>
 			</div>
 		</Transition>

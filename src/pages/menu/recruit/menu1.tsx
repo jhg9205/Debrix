@@ -6,7 +6,7 @@ import subTileMobile from '@images/menu/bg-recruit-m.png'
 import React from 'react'
 import MenuListbar from './menuListbar'
 import { PATH } from '@common/domain'
-import recruit from '@images/menu/recruit.png'
+import recruit from '@images/menu/recruit.jpg'
 import { Button } from '@mui/material'
 import { alert } from '@utils/alert'
 import { ALERT } from '@common/const'
@@ -72,7 +72,7 @@ const Menu1 = () => {
 						<img src={recruit} alt="recruit" className="recruit-img" />
 						<Button
 							id="recruitFile"
-							onClick={handleClick}
+							// onClick={handleClick}
 							variant="contained"
 							sx={{ width: '200px', height: '70px', borderRadius: '30px', margin: '0 auto', fontSize: '17px', fontWeight: 'bold' }}
 						>

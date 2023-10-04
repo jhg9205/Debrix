@@ -40,7 +40,7 @@ const Menu3 = () => {
 					<p className="menu_title_p1">
 						면허 <span>등록현황</span>
 					</p>
-					<p className="menu_title_p2">Industrial Total Solutions</p>
+					<p className="menu_title_p2">Sustainable Operation & Robust Framework.</p>
 				</section>
 			</div>
 		</Transition>

@@ -48,6 +48,6 @@ export default defineConfig({
 			additionalLegacyPolyfills: ['regenerator-runtime/runtime']
 		})
 	],
-	base: '/'
-	// base: '/tobecom'
+	// base: '/'
+	base: '/Debrix/'
 })

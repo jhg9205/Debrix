@@ -52,7 +52,7 @@ const HeaderDrawer = ({ toggleDrawer }: any) => {
 				</ListItemButton>
 				<Collapse in={intro} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding>
-						{['CEO인사말 및 회사소개', '조직도', '오시는길'].map((text, index) => (
+						{['회사소개', '오시는길'].map((text, index) => (
 							<ListItem key={text} disablePadding>
 								<ListItemButton sx={{ pl: 4 }} component={Link} to={companyLink[index]}>
 									<ListItemIcon>

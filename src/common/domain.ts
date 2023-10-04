@@ -7,42 +7,42 @@
  */
 export const enum PATH {
 	//메인
-	// MAIN = '/tobecom',
-	MAIN = '/',
+	MAIN = '/Debrix',
+	// MAIN = '/',
 
-	LOGIN = '/login',
+	// LOGIN = '/login',
 	ERROR = '/*',
 
 	//메뉴
-	COMPANY00 = '/company',
-	COMPANY01 = '/company/organization',
-	COMPANY02 = '/company/certificate',
-	COMPANY03 = '/company/patent',
-	COMPANY04 = '/company/location',
+	COMPANY00 = '/Debrix/company',
+	COMPANY01 = '/Debrix/company/organization',
+	COMPANY02 = '/Debrix/company/certificate',
+	COMPANY03 = '/Debrix/company/patent',
+	COMPANY04 = '/Debrix/company/location',
 
-	BUSINESS00 = '/business',
-	BUSINESS01 = '/business/history',
+	BUSINESS00 = '/Debrix/business',
+	BUSINESS01 = '/Debrix/business/history',
 
-	RESEARCH00 = '/research',
-	RESEARCH01 = '/research/history',
-	RESEARCH02 = '/research/list',
-	RESEARCH03 = '/research/detail/:menu/:index',
+	RESEARCH00 = '/Debrix/research',
+	RESEARCH01 = '/Debrix/research/history',
+	RESEARCH02 = '/Debrix/research/list',
+	RESEARCH03 = '/Debrix/research/detail/:menu/:index',
 
-	PRCENTER00 = '/prcenter',
-	PRCENTER01 = '/prcenter/faq',
-	PRCENTER02 = '/prcenter/pr',
-	PRCENTER03 = '/prcenter/detail/:menu/:index',
+	PRCENTER00 = '/Debrix/prcenter',
+	PRCENTER01 = '/Debrix/prcenter/faq',
+	PRCENTER02 = '/Debrix/prcenter/pr',
+	PRCENTER03 = '/Debrix/prcenter/detail/:menu/:index',
 
-	RECRUIT00 = '/recruit',
-	RECRUIT01 = '/recruit/ment',
-	RECRUIT02 = '/recruit/detail/:menu/:index',
-	RECRUIT03 = '/recruit/welfare',
+	RECRUIT00 = '/Debrix/recruit',
+	RECRUIT01 = '/Debrix/recruit/ment',
+	RECRUIT02 = '/Debrix/recruit/detail/:menu/:index',
+	RECRUIT03 = '/Debrix/recruit/welfare',
 
-	CUSTOMER00 = '/customer',
-	CUSTOMER01 = '/customer/util',
-	CUSTOMER02 = '/customer/detail/:menu/:index',
+	CUSTOMER00 = '/Debrix/customer',
+	CUSTOMER01 = '/Debrix/customer/util',
+	CUSTOMER02 = '/Debrix/customer/detail/:menu/:index',
 
-	STATISTIC = '/statistic'
+	STATISTIC = '/Debrix/statistic'
 }
 
 /* ******************* 메뉴 리스트 ******************* */

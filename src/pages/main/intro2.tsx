@@ -38,7 +38,7 @@ export const Intro2 = () => {
 									<button
 										className="btn10"
 										onClick={() => {
-											navigate('/company')
+											navigate('/Debrix/company')
 										}}
 									>
 										OUR SERVICES
@@ -48,7 +48,7 @@ export const Intro2 = () => {
 						</Grid>
 						<Grid item lg={6}>
 							<Grid container spacing={10}>
-								<Grid item lg={6} sx={{width:'100%'}}>
+								<Grid item lg={6} md={12} sx={{width:'100%'}}>
 									<EmojiFlagsIcon color='disabled'/>
 									<p className='sub_title'>SI/SM</p>
 									<p className='sub_cont'>고객사가 필요로 하는 IT 컨설팅, 기획, 개발, 구축, 운영 서비스를 통합적으로 제공합니다.</p>
@@ -71,25 +71,25 @@ export const Intro2 = () => {
 							</Grid>
 						</Grid>
 					</Grid>
-					<Divider style={{marginLeft:'calc(-50vw + 50%)', width:'100vw'}}/>
-					<div className="intro-count">
-						<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>
-							<span {...countItem1} className="intro-count-num" />
-							<p className="intro-count-title">HAPPY CLIENTS</p>
-						</div>
-						<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>
-							<span {...countItem2} className="intro-count-num" />
-							<p className="intro-count-title">PROJECT COMPLETE</p>
-						</div>
-						<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>
-							<p {...countItem3} className="intro-count-num" />
-							<p className="intro-count-title">DESIGN TEMPLATE</p>
-						</div>
-						<div className="intro-count-box">
-							<p {...countItem4} className="intro-count-num" />
-							<p className="intro-count-title">PROJECT</p>
-						</div>
-					</div>
+					{/*<Divider style={{marginLeft:'calc(-50vw + 50%)', width:'100vw'}}/>*/}
+					{/*<div className="intro-count">*/}
+					{/*	<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>*/}
+					{/*		<span {...countItem1} className="intro-count-num" />*/}
+					{/*		<p className="intro-count-title">HAPPY CLIENTS</p>*/}
+					{/*	</div>*/}
+					{/*	<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>*/}
+					{/*		<span {...countItem2} className="intro-count-num" />*/}
+					{/*		<p className="intro-count-title">PROJECT COMPLETE</p>*/}
+					{/*	</div>*/}
+					{/*	<div className="intro-count-box" style={{borderRight:'1px solid rgba(0, 0, 0, .1)'}}>*/}
+					{/*		<p {...countItem3} className="intro-count-num" />*/}
+					{/*		<p className="intro-count-title">DESIGN TEMPLATE</p>*/}
+					{/*	</div>*/}
+					{/*	<div className="intro-count-box">*/}
+					{/*		<p {...countItem4} className="intro-count-num" />*/}
+					{/*		<p className="intro-count-title">PROJECT</p>*/}
+					{/*	</div>*/}
+					{/*</div>*/}
 				</div>
 			</Transition>
 		</>

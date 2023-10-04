@@ -24,8 +24,8 @@ const MenuListbar = (type: string) => {
 				allowScrollButtonsMobile
 				aria-label="scrollable force tabs example"
 			>
-				<Tab value={PATH.COMPANY00} label="CEO 인사말 및 회사소개" />
-				<Tab value={PATH.COMPANY01} label="조직도" />
+				<Tab value={PATH.COMPANY00} label="회사소개" />
+				{/*<Tab value={PATH.COMPANY01} label="조직도" />*/}
 				<Tab value={PATH.COMPANY04} label="오시는길" />
 			</Tabs>
 		</div>

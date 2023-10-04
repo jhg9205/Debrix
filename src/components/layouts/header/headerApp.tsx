@@ -27,7 +27,7 @@ const HeaderApp = () => {
 	const triggerStyle = {
 		backgroundColor: useScrollTrigger() ? 'rgba(0,0,0,0.9)' : 'rgb(14,24,77,0)',
 		boxShadow: useScrollTrigger() ? '5px 0px 27px -5px rgba(0, 0, 0, 0.3) !important' : undefined,
-		minHeight: '80px',
+		minHeight: '60px',
 		borderBottom: '1px solid rgba(200, 200, 200, 0.75)'
 	}
 
@@ -49,14 +49,14 @@ const HeaderApp = () => {
 				<AppBar elevation={useScrollTrigger() ? 24 : 0} style={triggerStyle}>
 					<Toolbar>
 						<IconButton size="large" edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }} onClick={toggleDrawer(true)}>
-							<MenuIcon style={{ fontSize: '40px' }} />
+							<MenuIcon style={{ fontSize: '30px' }} />
 						</IconButton>
 						<Drawer open={state} onClose={toggleDrawer(false)} disableScrollLock={true}>
 							<HeaderDrawer toggleDrawer={toggleDrawer} />
 						</Drawer>
 						<Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{ textAlign: 'center' }}>
-							<Link to="/">
-								<img src={logo} alt="dd" style={{width:'150px'}}/>
+							<Link to="/Debrix">
+								<img src={logo} alt="dd" style={{width:'130px'}}/>
 							</Link>
 						</Typography>
 						<div style={{ width: '64px' }}></div>

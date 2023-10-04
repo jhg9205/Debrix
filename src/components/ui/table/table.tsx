@@ -21,22 +21,22 @@ export default function BasicTable(props: { data: any; menu: string }) {
 			case 'history':
 			case 'list':
 				// 연구개발 테이블
-				navigate(`/research/detail/${props.menu}/${index}`)
+				navigate(`/Debrix/research/detail/${props.menu}/${index}`)
 				break
 			case 'news':
 			case 'qa':
 				// 홍보센터 테이블
-				navigate(`/prcenter/detail/${props.menu}/${index}`)
+				navigate(`/Debrix/prcenter/detail/${props.menu}/${index}`)
 				break
 			case 'info':
 			case 'ment':
 				// 인재채용 테이블
-				navigate(`/recruit/detail/${props.menu}/${index}`)
+				navigate(`/Debrix/recruit/detail/${props.menu}/${index}`)
 				break
 			case 'as':
 			case 'util':
 				// 고객지원 테이블
-				navigate(`/customer/detail/${props.menu}/${index}`)
+				navigate(`/Debrix/customer/detail/${props.menu}/${index}`)
 				break
 		}
 	}

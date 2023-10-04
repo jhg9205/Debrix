@@ -66,7 +66,7 @@ export const DetailRecruit = (props: {
 			</div>
 			<div style={{ fontSize: '15px', textAlign: 'center', fontWeight: '500', color: '#7f7f7f' }}>
 				<p>본 채용에 관한 문의 사항은</p>
-				<p>경영지원팀 메일(tobecom@naver.com)로 부탁 드립니다.</p>
+				<p>경영지원팀 메일(hr@debrix.co.kr)로 부탁 드립니다.</p>
 			</div>
 			<Button
 				id="recruitFile"

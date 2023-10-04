@@ -99,7 +99,7 @@ const Menu2 = () => {
 															<div>
 																{rowData.content.map((content: { img: string; text: string }, index: number) => (
 																	<div key={index}>
-																		<p style={{ fontSize: '18px', padding: '20px 0', textAlign: 'left' }}>{content.text}</p>
+																		<p style={{ fontSize: '18px', padding: '5px 0', textAlign: 'left' }}>{content.text}</p>
 																		{content.img != '' ? (
 																			<img src={content.img} loading="lazy" style={{ width: '80%' }} alt="pr" />
 																		) : (

@@ -20,7 +20,7 @@ const Menu3 = () => {
 	const menulist = MenuListbar(PATH.RECRUIT03)
 
 	const data = [
-		{ title: '퇴직연금제도', content: '퇴직급여 지급 재원을 금융회사에 적립하여 효율적으로 관리합니다.' },
+		{ title: '퇴직연금제도(시행예정)', content: '퇴직급여 지급 재원을 금융회사에 적립하여 효율적으로 관리합니다.' },
 		{ title: '경조사 유급휴가', content: '직원의 경조사(신혼여행, 장례식 등)에 휴가를 부여합니다.' },
 		{ title: '(야근시)석식비, 교통비 제공', content: '부득이하게 야근을 할 경우 석식과 교통비를 지원합니다.' },
 		{ title: '사무실 다과 제공', content: '직원을 위한 간식을 제공합니다.' },
@@ -48,7 +48,7 @@ const Menu3 = () => {
 					<p className="menu_title_p1">
 						복<span>리후생</span>
 					</p>
-					<p className="menu_title_p2">투비콤의 복리후생을 소개합니다.</p>
+					<p className="menu_title_p2">데브릭스의 복리후생을 소개합니다.</p>
 				</section>
 			</div>
 		</Transition>

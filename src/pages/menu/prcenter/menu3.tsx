@@ -7,8 +7,8 @@ import React from 'react'
 import MenuListbar from './menuListbar'
 import { PATH } from '@common/domain'
 import { Card, CardActionArea, CardContent, CardMedia, Typography, Fade } from '@mui/material'
-import util01 from '@images/menu/cstm-util-01.png'
-import companyProfilePdf from '@data/download/companyProfile.pdf'
+import util01 from '@images/main/fileMain.jpg'
+import companyProfilePdf from '@data/download/DEBRIX.pdf'
 import { $FileDownLoad } from '@utils/request'
 import { alert } from '@utils/alert'
 import { ALERT } from '@common/const'
@@ -85,9 +85,9 @@ const Menu3 = () => {
 							<Card id="cardCompanyProfile" sx={{ maxWidth: 345 }} onClick={handleClick}>
 								<CardActionArea>
 									<CardMedia component="img" height="auto" image={util01} alt="회사소개서" />
-									<CardContent>
+									<CardContent sx={{backgroundColor:'#fdd947'}}>
 										<Typography gutterBottom variant="h5" component="div">
-											투비콤 - 회사소개서
+											데브릭스 - 회사소개서
 										</Typography>
 									</CardContent>
 								</CardActionArea>

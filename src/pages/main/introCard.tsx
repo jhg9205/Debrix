@@ -13,26 +13,29 @@ import {
 	Tabs
 } from '@mui/material'
 import * as React from 'react'
-import bus0 from '@images/menu/business8.jpg'
-import bus1 from '@images/menu/business9.jpg'
-import bus2 from '@images/menu/business12.jpg'
+import bus0 from '@images/menu/analyze.jpg'
+import bus1 from '@images/menu/cloud.jpg'
+import bus2 from '@images/menu/blockchain.jpg'
 import bus3 from '@images/menu/business7.jpg'
-import bus4 from '@images/menu/business11.jpg'
-import HPEimg1 from '@images/main/HPEimg1.jpg'
-import HPEimg2 from '@images/main/HPEimg2.jpg'
-import HPEimg3 from '@images/main/HPEimg3.jpg'
-import HPEimg4 from '@images/main/HPEimg4.jpg'
-import HPEimg5 from '@images/main/HPEimg5.jpg'
-import HPEimg6 from '@images/main/HPEimg6.jpg'
-import HPEimg7 from '@images/main/HPEimg7.jpg'
-import HPEimg8 from '@images/main/HPEimg8.jpg'
-import HPEimg9 from '@images/main/HPEimg9.jpg'
-import HPEimg10 from '@images/main/HPEimg10.jpg'
-import HPEimg11 from '@images/main/HPEimg11.jpg'
-import HPEimg12 from '@images/main/HPEimg12.jpg'
-import HPEimg13 from '@images/main/HPEimg13.jpg'
-import HPEimg14 from '@images/main/HPEimg14.jpg'
-import HPEimg15 from '@images/main/HPEimg15.jpg'
+import bus4 from '@images/menu/RnD.jpg'
+import bus5 from '@images/menu/uiux.jpg'
+import SI1 from "@images/main/SI1.jpg";
+import SI2 from "@images/main/SI2.jpg";
+import SI3 from "@images/main/SI3.jpg";
+import SI4 from "@images/main/SI4.jpg";
+import SI5 from "@images/main/SI5.jpg";
+import SI6 from "@images/main/SI6.jpg";
+import SI7 from "@images/main/SI7.jpg";
+import SUCCESS from "@images/main/SUCCESS.jpg";
+import SOLUTION1 from '@images/main/SOLUTION1.jpg'
+import SOLUTION2 from '@images/main/SOLUTION2.jpg'
+import SOLUTION3 from '@images/main/SOLUTION3.jpg'
+import RnD1 from '@images/main/RND1.jpg'
+import RnD2 from '@images/main/RND2.jpg'
+import RnD3 from '@images/main/RND3.jpg'
+import RnD4 from '@images/main/RND4.jpg'
+import UIUX1 from "@images/main/UIUX1.jpg";
+import UIUX2 from "@images/main/UIUX2.jpg";
 import CircleIcon from '@mui/icons-material/Circle'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Autoplay, Navigation, Pagination } from 'swiper'
@@ -74,11 +77,12 @@ export const IntroCard = () => {
 		minHeight: '100px'
 	}
 	const title = [
+		'SI(시스템통합)',
 		'AI분석 플랫폼(HPE)',
 		'빅데이터 플랫폼(HPE)',
-		'SI 사업(GIS, Mobile 등)',
 		'스마트 안전보건관리 솔루션',
-		'RPA(지능형 업무자동화 솔루션)'
+		'UI/UX(DSO)',
+		'R&D'
 	]
 	const [value, setValue] = React.useState(0)
 	const [swiper, setSwiper]: any = React.useState()
@@ -146,7 +150,6 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 
 	const handleClickOpen = () => {
 		setOpen(true)
-		// navigate(`/business?index=${props.index}`)
 	};
 
 	const handleClose = () => {
@@ -187,35 +190,37 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 
 	switch (props.index) {
 		case 0:
-			image = bus0
-			img1 = HPEimg1
-			img2 = HPEimg2
-			img3 = HPEimg3
-			img4 = HPEimg4
-			img5 = HPEimg5
-			img6 = HPEimg6
-			img7 = HPEimg7
-			img8 = HPEimg8
-			img9 = HPEimg9
-			img10 = HPEimg10
-			img11 = HPEimg11
-			img12 = HPEimg12
-			img13 = HPEimg13
-			img14 = HPEimg14
-			img15 = HPEimg15
+			image = bus3
+			img1 = SI1
+			img2 = SI2
+			img3 = SI3
+			img4 = SI4
+			img5 = SI5
+			img6 = SI6
+			img7 = SI7
+			img8 = SUCCESS
 			break
 		case 1:
 			image = bus1
+			img1 = SI1
 			break
 		case 2:
 			image = bus2
+			img1 = SI1
 			break
 		case 3:
-			image = bus3
+			image = bus0
+			img1 = SI1
 			break
 		case 4:
-			image = bus4
+			image = bus5
+			img1 = SI1
+			img2 = SI1
 			break
+		case 5:
+			image = bus4
+			img1 = UIUX1
+			img2 = UIUX2
 	}
 
 	return (
@@ -236,7 +241,7 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 				<Button
 					size="medium"
 					color="inherit"
-					onClick={handleClickOpen}
+					onClick={()=>navigate(`/Debrix/business?index=${props.index}`)}
 				>
 					더보기
 				</Button>
@@ -246,18 +251,20 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 			</CardActions>
 			<Collapse in={expanded} timeout="auto" unmountOnExit>
 				<CardContent>
-					<BusinessText index={props.index} threshold={0} direction={'up'} />
+					<BusinessText index={0} threshold={0} direction={'up'} indexMain={props.index}/>
 				</CardContent>
 			</Collapse>
 		</Card>
 			<Dialog
-				fullScreen
+				// fullScreen
+				maxWidth='xl'
 				open={open}
 				onClose={handleClose}
 				TransitionComponent={TransitionCustom}
 				className='dialog'
+				scroll='paper'
 			>
-				<AppBar sx={{ position: 'relative', backgroundColor:'black' }} id='modal_bar'>
+				<AppBar sx={{ position: 'relative', backgroundColor:'rgba(44, 44, 44, 0.9)' }} id='modal_bar'>
 					<Toolbar>
 						<IconButton
 							edge="start"
@@ -267,29 +274,59 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 						>
 							<CloseIcon />
 						</IconButton>
-						<Typography sx={{ ml: 3, flex: 1 }} variant="h4" component="div">
+						<Typography sx={{ ml: 3, flex: 1 }} variant="h5" component="div">
 							{props.title}
 						</Typography>
 					</Toolbar>
 				</AppBar>
-				<img src={img1} alt='img1'/>
-				<img src={img2} alt='img2'/>
-				<img src={img3} alt='img3'/>
-				<img src={img4} alt='img4'/>
-				<img src={img5} alt='img5'/>
-				<img src={img6} alt='img5'/>
-				<img src={img7} alt='img5'/>
-				<img src={img8} alt='img5'/>
-				<img src={img9} alt='img5'/>
-				<img src={img10} alt='img5'/>
-				<img src={img11} alt='img5'/>
-				<img src={img12} alt='img5'/>
-				<img src={img13} alt='img5'/>
-				<img src={img14} alt='img5'/>
-				<img src={img15} alt='img5'/>
+				{props.index == 0 ?
+					<>
+						<img src={SI1} alt='img1'/>
+						<img src={SI2} alt='img2'/>
+						<img src={SI3} alt='img3'/>
+						<img src={SI4} alt='img4'/>
+						<img src={SI5} alt='img5'/>
+						<img src={SI6} alt='img5'/>
+						<img src={SI7} alt='img5'/>
+						<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+					</>
+					:
+					props.index == 1 ?
+						<>
+							<img src={SOLUTION2} alt='img1'/>
+							<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+						</>
+						:
+						props.index == 2 ?
+							<>
+								<img src={SOLUTION1} alt='img1'/>
+								<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+							</>
+							:
+							props.index == 3 ?
+								<>
+									<img src={SOLUTION3} alt='img1'/>
+									<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+								</>
+								:
+								props.index == 4 ?
+									<>
+										<img src={UIUX1} alt='img1'/>
+										<img src={UIUX2} alt='img2'/>
+										<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+									</>
+									:
+									<>
+										<img src={RnD1} alt='img1'/>
+										<img src={RnD2} alt='img2'/>
+										<img src={RnD3} alt='img3'/>
+										<img src={RnD4} alt='img4'/>
+										<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
+									</>
+				}
 				<Fade in={trigger}>
 					<Box onClick={handleClick} role="presentation" sx={{ position: 'fixed', bottom: 30, right: 30 }}>
-						<Fab size="small" aria-label="scroll back to top">
+						<Fab size="large" aria-label="scroll back to top">
 							<KeyboardArrowUpIcon />
 						</Fab>
 					</Box>
@@ -304,5 +341,5 @@ const TransitionCustom = React.forwardRef(function Transition(
 	},
 	ref: React.Ref<unknown>,
 ) {
-	return <Slide direction="up" ref={ref} {...props} />;
+	return <Slide direction="down" ref={ref} {...props} />;
 });

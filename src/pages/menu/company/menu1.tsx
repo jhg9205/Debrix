@@ -9,13 +9,14 @@ import React from 'react'
 import { Fade, Grid } from '@mui/material'
 import MenuListbar from './menuListbar'
 import { PATH } from '@common/domain'
+import Organize from '@images/common/organize.jpg'
 
 const Menu1 = () => {
 	const [ceo, setCeo] = React.useState(false)
 
 	const style = {
 		width: '100%',
-		minHeight: '1000px',
+		minHeight: '800px',
 		minWidth: '100%'
 	}
 
@@ -30,9 +31,9 @@ const Menu1 = () => {
 			<div className="menu_title_p_warp">
 				<section>
 					<p className="menu_title_p1">
-						CEO'S <span>GREETINGS</span>
+						About <span>DEBRIX</span>
 					</p>
-					<p className="menu_title_p2">Industrial Total Solutions</p>
+					<p className="menu_title_p2">Sustainable Operation & Robust Framework.</p>
 				</section>
 			</div>
 		</Transition>
@@ -73,23 +74,22 @@ const Menu1 = () => {
 											</div>
 											<div className="ceo_txt">
 												<p>
-													데브릭스는 SI사업을 통한 최적화된 시스템 및 Big-Data/AI플랫폼, RPA, 안전보건관리솔루션, UI/UX를 제공하는 ICT전문 기업입니다.
+													데브릭스는 SI사업을 통한 최적화된 시스템 및 Big-Data/AI플랫폼, 안전보건관리솔루션, UI/UX를 제공하는 ICT 전문기업입니다.
 													<br />
 													<br />
-													4차 산업 분야의 다양한 융복합 기술을 기반으로 GIS, 토지정보, 공공 서비스 및 상하수도, 물관리 분야의 시스템 통합
-													전문 ICT기업입니다.<br />
-													<br />
-													DEBRIX는 대용량 데이터관리 역량을 바탕으로 빅데이터 시스템 마스터 플랜 수립, 빅데이터 인프라 아키텍처 설계,
-													빅데이터 거버넌스 및 분석 컨설팅을 주 사업 영역으로 제공하고 있습니다.
+													4차 산업 분야의 다양한 융복합 기술을 기반으로 GIS, 토지정보, 공공 서비스 및 상하수도, 물관리 분야의 시스템 통합 전문 기업이며,
 													<br />
 													<br />
-													또한 상용 플랫폼 구축을 지향하며, 분석업무의 전체 End-To-End 운영 절차를 끊김없이 팀간 협력하여 진행하고 자동화할 수 있는
-													기능과 Repository를 제공합니다.
+													대용량 데이터관리 역량을 바탕으로 빅데이터 시스템 마스터 플랜 수립, 빅데이터 인프라 아키텍처 설계, 빅데이터 거버넌스 및 분석 컨설팅을 주 사업 영역으로 제공하고 있습니다.
+													<br />
+													<br />
+													또한 적극적인 R&D 를 통해 최신 ICT기술을 적용한 신규 솔루션 및 서비스 제공을 위한 지속적인 활동을 하고,
+													차별화된 고객 서비스 제공을 위해 항상 노력하고 고민하는 기업으로 발전해 가고자 합니다.
 													<br />
 													<br />
 													감사합니다.
 												</p>
-												<span className="ceo_sign">주식회사 데브릭스 임직원 일동</span>
+												<span className="ceo_sign">데브릭스 임직원 일동</span>
 											</div>
 										</div>
 									</Fade>
@@ -97,68 +97,51 @@ const Menu1 = () => {
 							</Grid>
 						</Transition>
 					</div>
-					<div style={{ paddingBottom: '20px', display: 'inline-grid' }} className="company_info">
 						<Transition threshold={4} direction={'up'}>
-							<section>
-								<Grid container spacing={0}>
-									<Grid item lg={6} md={12}>
+								<Grid container>
+									<Grid item lg={6} md={12} style={{backgroundColor:'#2A323F', width:'100%', padding:'30px'}} className='introOrganize'>
 										<p className="company_desc_p ">
-											<span className="title">사명</span>
-											<span className="desc">주식회사 데브릭스 ( TOBECOM Co., Ltd. )</span>
+											<span className="title">회사명</span>
+											<span className="desc">주식회사 데브릭스</span>
 										</p>
-									</Grid>
-									<Grid item lg={6} md={12}>
+										<p className="company_desc_p ">
+											<span className="title">설립일</span>
+											<span className="desc">2023년 3월 23일</span>
+										</p>
 										<p className="company_desc_p ">
 											<span className="title">대표이사</span>
 											<span className="desc">유 희 남</span>
 										</p>
-									</Grid>
-								</Grid>
-							</section>
-						</Transition>
-						<Transition threshold={5} direction={'up'}>
-							<section>
-								<Grid container spacing={0}>
-									<Grid item lg={6} md={12}>
 										<p className="company_desc_p ">
-											<span className="title">설립연도</span>
-											<span className="desc">2023년 9월 1일</span>
+											<span className="title">매출액</span>
+											<span className="desc">30억원 (2023년 연결 기준)</span>
 										</p>
-									</Grid>
-									<Grid item lg={6} md={12}>
+										<p className="company_desc_p ">
+											<span className="title">사업영역</span>
+											<span className="desc">소프트웨어 개발, 공급 및 유지보수<br/>시스템 통합 자문 및 구축 관련 서비스 용역</span>
+										</p>
+										<p className="company_desc_p ">
+											<span className="title">임직원수</span>
+											<span className="desc">18명 (2023년 7월 기준)</span>
+										</p>
+										<p className="company_desc_p ">
+											<span className="title">연구개발<br/>/기술인력</span>
+											<span className="desc">5명 (2023년 7월 기준)</span>
+										</p>
 										<p className="company_desc_p ">
 											<span className="title">위치</span>
-											<span className="desc">서울특별시 강남구 강남대로94길 67 3층(역삼동, 도연빌딩)</span>
+											<span className="desc">서울특별시 강남구 강남대로94길 67, 3층(역삼동, 도연빌딩)</span>
 										</p>
+										<p className="company_desc_p ">
+											<span className="title">대표전화</span>
+											<span className="desc">02-553-2023</span>
+										</p>
+									</Grid>
+									<Grid item lg={6} md={12} style={{backgroundColor:'#2A323F', width:'100%'}}>
+										<img className='organize' src={Organize} alt='dd'/>
 									</Grid>
 								</Grid>
-							</section>
 						</Transition>
-						<Transition threshold={6} direction={'up'}>
-							<section>
-								<Grid container spacing={0}>
-									<Grid item lg={6} md={12}>
-										<p className="company_desc_p ">
-											<span className="title">연락처</span>
-											<span className="desc">Tel : 02-553-2023 / Fax : 02-553-2023</span>
-										</p>
-									</Grid>
-									<Grid item lg={6} md={12}>
-										<p className="company_desc_p ">
-											<span className="title lh">사업영역</span>
-											<span className="desc">
-												SI 시스템통합사업
-												<span>대용량 빅데이터 관리 플랫폼 사업</span>
-												<span>AI 분석 플랫폼 사업</span>
-												<span>스마트 안전보건관리 솔루션</span>
-												<span>RPA(지능형 업무 자동화 솔루션)</span>
-											</span>
-										</p>
-									</Grid>
-								</Grid>
-							</section>
-						</Transition>
-					</div>
 				</div>
 			</div>
 		</Layout>

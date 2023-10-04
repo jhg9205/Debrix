@@ -35,7 +35,7 @@ const DetailTable = (props: IDetailTableProps) => {
 			title = nextTitle
 		}
 
-		return title.indexOf(none) ? navigate(`/${props.menu}/detail/${menu}/${Number(index) + idx}`) : null
+		return title.indexOf(none) ? navigate(`/Debrix/${props.menu}/detail/${menu}/${Number(index) + idx}`) : null
 	}
 
 	const imgsGroup = {

@@ -1,179 +1,15 @@
 {
 	"news": [
 		{
-			"seq": 11,
-			"title": "news 11  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": ""
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 10,
-			"title": "news 10 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 9,
-			"title": "news 9  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 8,
-			"title": "news 8  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 7,
-			"title": "news 7  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 6,
-			"title": "news 6   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 5,
-			"title": "news 5   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 4,
-			"title": "news 4   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 3,
-			"title": "news 3  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
-			"seq": 2,
-			"title": "news 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn",
-			"content": [
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				}
-			],
-			"date": "2022-12-20",
-			"note": ""
-		},
-		{
 			"seq": 1,
-			"title": "news 1  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magn ",
+			"title": "DEBRIX 홈페이지 신규 개설",
 			"content": [
 				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
-					"img": "/business7.jpg"
-				},
-				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
+					"text": "Debrix 홈페이지 신규 개설입니다.",
 					"img": "/business7.jpg"
 				}
 			],
-			"date": "2022-12-20",
+			"date": "2023-10-06",
 			"note": ""
 		}
 	],
@@ -183,11 +19,19 @@
 			"title": "사업분야가 어떻게 되나요?",
 			"content": [
 				{
-					"text": "1. 설계 및 기술개발, 2. 통합감시 및 계측제어시스템,\n 3. SMART Water 관제시스템 유지관리, \n 4. SI사업, \n 5. 환경 시스템, \n 6. 빅데이터 / AI 시스템, \n 7. GIS/모바일 시스템",
+					"text": "01. SI(시스템통합)",
 					"img": ""
 				},
 				{
-					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cumque debitis delectus deserunt explicabo, fuga magni non nulla, odio odit officiis porro quo sed vel velit, veniam voluptatem? Exercitationem, natus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid, asperiores aut consequatur earum eligendi facilis inventore iure minus molestiae mollitia officiis praesentium quae quisquam quo sapiente ut vel voluptatibus.",
+					"text": "02. Solution",
+					"img": ""
+				},
+				{
+					"text": "03. UI/UX",
+					"img": ""
+				},
+				{
+					"text": "04. R&D",
 					"img": ""
 				}
 			],

@@ -30,7 +30,7 @@ export const Contact = () => {
 							backgroundColor:'black'
 						}}
 						onClick={() => {
-							navigate('/business')
+							navigate('/Debrix/business')
 						}}
 					>
 						Contact

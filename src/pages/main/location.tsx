@@ -67,7 +67,7 @@ export const Location = (props: { isMenu?: boolean }) => {
 									<ul>
 										<li>
 											<span>주소</span>
-											<span>서울특별시 강남구 강남대로94길 67 3층(역삼동, 도연빌딩)</span>
+											<span>서울특별시 강남구 강남대로94길 67, 3층(역삼동, 도연빌딩)</span>
 										</li>
 										<li>
 											<span>이메일</span>
@@ -104,12 +104,13 @@ export const Location = (props: { isMenu?: boolean }) => {
 									<CardContent>
 										<ul>
 											<li>
-												<b>금천IC</b> {'=>'} '시흥대교' 방면
+												<b>반포IC</b> {'=>'} '역삼' 방면
 											</li>
-											<li>'시흥,광명IC, 독산동' 방면 지하차도 오른쪽 옆길 {'=>'}</li>
-											<li>금천교에서 '서울(독산동) 방면으로 우회전' {'=>'} </li>
+											<li>'강남역방면 우회전 {'=>'}</li>
+											<li>'역삼역방면 좌회전 {'=>'}</li>
+											<li>한국타이어빌딩 골목' {'=>'} </li>
 											<li>
-												<b>가산우림라이온스밸리2차</b>
+												<b>도연빌딩</b>
 											</li>
 										</ul>
 									</CardContent>
@@ -123,10 +124,10 @@ export const Location = (props: { isMenu?: boolean }) => {
 									</CardMedia>
 									<CardContent>
 										<ul>
-											<li style={{ color: '#263C96', fontWeight: 'bold' }}>1호선 독산역</li>
+											<li style={{ color: '#263C96', fontWeight: 'bold' }}>2호선 역삼역</li>
 											<br />
-											<li>2번 출구에서 도보 1분</li>
-											<li>3번 출구에서 도보 3분</li>
+											<li>6번 출구에서 도보 6분</li>
+											<li>4번 출구에서 도보 3분</li>
 										</ul>
 									</CardContent>
 								</Card>
@@ -142,11 +143,15 @@ export const Location = (props: { isMenu?: boolean }) => {
 											<li style={{ color: '#48966a' }}>
 												<b>마을버스</b>
 											</li>
-											<li style={{ color: '#48966a' }}>금천 01 | 금천 05 | 금천 06 | 금천 07 | 금천 08</li>
+											<li style={{ color: '#48966a' }}>강남07 | 서초03 | 서초09 | 서초10 | 서초11</li>
 											<li style={{ color: '#00AEAB' }}>
 												<b>일반버스</b>
 											</li>
-											<li style={{ color: '#00AEAB' }}>102 | 27 | 75</li>
+											<li style={{ color: '#00AEAB' }}>6번 | 11-3번 | 917번</li>
+											<li style={{ color: '#ff581d' }}>
+												<b>직행좌석</b>
+											</li>
+											<li style={{ color: '#ff581d' }}>9600 | 1100 | 1700 | 2000</li>
 										</ul>
 									</CardContent>
 								</Card>

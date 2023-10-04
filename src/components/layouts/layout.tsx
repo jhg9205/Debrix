@@ -84,7 +84,7 @@ const Layout = (props: { children: React.ReactNode; main?: boolean }) => {
 								backgroundColor:'#fdd947'
 							}}
 							onClick={() => {
-								navigate('/company')
+								navigate('/Debrix/company')
 							}}
 						>
 							About us

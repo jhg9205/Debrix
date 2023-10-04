@@ -36,7 +36,7 @@ const Menu4 = () => {
 					<p className="menu_title_p1">
 						특허 <span>수상실적</span>
 					</p>
-					<p className="menu_title_p2">Industrial Total Solutions</p>
+					<p className="menu_title_p2">Sustainable Operation & Robust Framework.</p>
 				</section>
 			</div>
 		</Transition>

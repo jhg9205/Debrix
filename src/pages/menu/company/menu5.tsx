@@ -29,7 +29,7 @@ const Menu5 = () => {
 					<p className="menu_title_p1">
 						L<span>OCATION</span>
 					</p>
-					<p className="menu_title_p2">Industrial Total Solutions</p>
+					<p className="menu_title_p2">오시는길</p>
 				</section>
 			</div>
 		</Transition>

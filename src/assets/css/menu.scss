@@ -29,7 +29,7 @@
 }
 .menu_title_p2 {
 	padding-top: 5px;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 // 메뉴토글리스트
@@ -77,12 +77,28 @@
 		display: none;
 	}
 }
-
+.organize {
+	width: 80%;
+	height: 100%;
+	padding: 0 0px 0 0;
+	display: flex;
+	float: left;
+	@include mobile{
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		float: none;
+	}
+	@include tablet{
+		padding: 0;
+		float: none;
+		margin:0 auto !important;
+	}
+}
 // 회사소개메뉴 관련
 #companyLayout {
 	.menu_title_contain {
 		text-align: center;
-		margin-bottom: 50px;
 	}
 	.pointer {
 		color: #6d6d6d;
@@ -95,7 +111,6 @@
 		background-size: cover;
 		display: flex;
 		margin-top: 50px;
-
 		@include mobile {
 			width: 100%;
 			padding: 20px;
@@ -106,6 +121,7 @@
 			padding: 50px;
 			margin: 0 auto;
 		}
+
 
 		.ceo_img {
 			text-align: right;
@@ -165,18 +181,15 @@
 			}
 		}
 	}
-
-	.company_info {
-		.MuiGrid-container {
-			@include mobile {
-				width: 100%;
-			}
-			.MuiGrid-item {
-				@include mobile {
-					width: 90%;
-					margin: 0 auto;
-				}
-			}
+	.introOrganize{
+		padding:30px 0 0 200px !important;
+		@include mobile{
+			padding: 20px 10px !important;
+			font-size: 20px !important;
+		}
+		@include tablet{
+			padding: 30px !important;
+			margin: 0 auto !important;
 		}
 	}
 	.company_desc_p {
@@ -192,12 +205,12 @@
 		}
 
 		.title {
-			width: 130px;
+			min-width: 130px;
 			display: inline-block;
 			font-weight: 400;
 			padding: 15px;
 			background-color: rgba(50, 64, 90, 0.9);
-			color: white;
+			color: #A3C3FF;
 			border-radius: 10px;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
@@ -208,10 +221,11 @@
 		.desc {
 			width: 100%;
 			padding: 15px;
-			min-width: 620px;
+			min-width: 300px;
 			display: inline-block;
 			text-align: left;
 			font-weight: 300;
+			color: white;
 			@include mobile {
 				min-width: 0;
 			}
@@ -577,7 +591,7 @@
 				float: right;
 				border: 1px solid rgb(82, 102, 141);
 				width: 200px;
-				margin: 30px 0;
+				margin: 5px 0 20px 0;
 			}
 		}
 		.intro-text-right {
@@ -593,7 +607,7 @@
 			hr {
 				border: 1px solid rgb(82, 102, 141);
 				width: 200px;
-				margin: 30px 0;
+				margin: 5px 0 20px 0;
 			}
 		}
 		.intro-detail-left {

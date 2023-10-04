@@ -14,8 +14,10 @@ const PrCenterDetail = () => {
 	const path = tbData.path
 	const menuName = tbData.menuName
 	const Index = Number(index)
-	const bottomTitle = getIndex(tbData.dataList!, index)[0]
-	const topTitle = getIndex(tbData.dataList!, index)[1]
+	// const bottomTitle = getIndex(tbData.dataList!, index)[0]
+	// const topTitle = getIndex(tbData.dataList!, index)[1]
+	const bottomTitle = '게시물이 없습니다.'
+	const topTitle = '게시물이 없습니다.'
 	const dataIndex = tbData.dataList!.findIndex(i => i.seq == Index)
 	const data = tbData.dataList![dataIndex] as DataDetail
 

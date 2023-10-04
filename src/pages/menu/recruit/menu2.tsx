@@ -29,7 +29,7 @@ const Menu2 = () => {
 					<p className="menu_title_p1">
 						채<span>용공고</span>
 					</p>
-					<p className="menu_title_p2">투비콤과 함께 할 인재를 모집합니다.</p>
+					<p className="menu_title_p2">데브릭스와 함께 할 인재를 모집합니다.</p>
 				</section>
 			</div>
 		</Transition>

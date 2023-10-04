@@ -20,15 +20,15 @@ const Main = () => {
 					<source src={videoD} type="video/mp4"/>
 				</video>
 			</section>
-			<section>
-				<HoverCard/>
-			</section>
+			{/*<section>*/}
+			{/*	<HoverCard/>*/}
+			{/*</section>*/}
 			<section className="intro-card">
 				<IntroCard />
 			</section>
-			<section>
-				<Social/>
-			</section>
+			{/*<section>*/}
+			{/*	<Social/>*/}
+			{/*</section>*/}
 			<section><Skill/></section>
 			<section>
 				<Location />

@@ -17,14 +17,14 @@ const Skill = () => {
                 </Grid>
                 <Grid item lg={5} className='skill_third'>
                     <p style={{fontSize:'14px', fontWeight:'600', paddingBottom:'20px'}}>CHECK OUR SKILLS</p>
-                    <AirbnbSlider defaultValue={80}/>
-                    <p className='sub_cont'>SYSTEM INTEGRATION - 17 YEARS EXPERIENCE</p>
-                    <AirbnbSlider defaultValue={85}/>
-                    <p className='sub_cont'>BIG DATA - 6 YEARS EXPERIENCE</p>
+                    <AirbnbSlider defaultValue={95}/>
+                    <p className='sub_cont'>SYSTEM INTEGRATION - 10 YEARS EXPERIENCE</p>
                     <AirbnbSlider defaultValue={90}/>
-                    <p className='sub_cont'>SOLUTION - 5 YEARS EXPERIENCE</p>
-                    <AirbnbSlider defaultValue={90}/>
-                    <p className='sub_cont'>FRAMEWORK - 4 YEARS EXPERIENCE</p>
+                    <p className='sub_cont'>BIG DATA - 5 YEARS EXPERIENCE</p>
+                    <AirbnbSlider defaultValue={88}/>
+                    <p className='sub_cont'>SOLUTION - 2 YEARS EXPERIENCE</p>
+                    <AirbnbSlider defaultValue={93}/>
+                    <p className='sub_cont'>FRAMEWORK - 10 YEARS EXPERIENCE</p>
                 </Grid>
             </Grid>
         </div>

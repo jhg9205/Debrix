@@ -11,7 +11,7 @@ let currentPath = ''
 const HeaderPc2 = () => {
 	const navigate = useNavigate()
 	const location = useLocation()
-	const menuPath: string[] = [PATH.COMPANY00, PATH.BUSINESS00, PATH.PRCENTER00, PATH.RECRUIT00, PATH.CUSTOMER00]
+	const menuPath: string[] = [PATH.COMPANY00, PATH.BUSINESS00, PATH.PRCENTER00, PATH.RECRUIT00, PATH.CUSTOMER01]
 
 	useEffect(() => {
 		if (currentPath === location.pathname) {
@@ -81,7 +81,7 @@ const HeaderPc2 = () => {
 			{/* 메인메뉴 */}
 			<div id="headerTopWrap" className="top header2" style={{ backgroundColor: 'rgba(255,255,255,0)' }}>
 				<div className="logoBox">
-					<Link to="/">
+					<Link to="/Debrix">
 						<img style={classes.img} src={logoWhite} alt="로고" />
 					</Link>
 				</div>
@@ -91,8 +91,8 @@ const HeaderPc2 = () => {
 							<Link to={menuPath[0]}>회사소개</Link>
 							<ul className="submenu submenu1">
 								<div></div>
-								<Menu title="CEO 인사말 및 회사소개" menu={PATH.COMPANY00} />
-								<Menu title="조직도" menu={PATH.COMPANY01} />
+								<Menu title="회사소개" menu={PATH.COMPANY00} />
+								{/*<Menu title="조직도" menu={PATH.COMPANY01} />*/}
 								<Menu title="오시는길" menu={PATH.COMPANY04} />
 							</ul>
 						</li>
