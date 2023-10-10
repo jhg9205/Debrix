@@ -32,7 +32,7 @@ const Menu1 = () => {
 			text: '입사지원서를\n 저장 하시겠습니까?\n\n',
 			confirmText: '확인',
 			confirmCall: () => {
-				$FileDownLoad(file, '입사지원서', 'doc')
+				$FileDownLoad('/download/DEBRIX_RECRUIT.xlsx', 'DEBRIX_RECRUIT', 'xlsx')
 			}
 		})
 	}
@@ -72,7 +72,7 @@ const Menu1 = () => {
 						<img src={recruit} alt="recruit" className="recruit-img" />
 						<Button
 							id="recruitFile"
-							// onClick={handleClick}
+							onClick={handleClick}
 							variant="contained"
 							sx={{ width: '200px', height: '70px', borderRadius: '30px', margin: '0 auto', fontSize: '17px', fontWeight: 'bold' }}
 						>

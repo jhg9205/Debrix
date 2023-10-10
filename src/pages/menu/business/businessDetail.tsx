@@ -404,8 +404,7 @@ export const BusinessText = (props: { index: number ; threshold: number; directi
 			description = [
 				'*  HPE Ezmeral Big-Data 플랫폼/AI 플랫폼 (HPE EZMERAL Data Fabric)',
 				'*  HPE Ezmeral AI 플랫폼 (HPE EZMERAL ML OPS Platform)',
-				'*  스마트 안전보건관리 솔루션',
-				'*  RPA(지능형 업무자동화) 솔루션'
+				'*  스마트 안전보건관리 솔루션'
 			]
 			break
 		case 2:

@@ -22,7 +22,7 @@ export const DetailRecruit = (props: {
 			text: '입사지원서를\n 저장 하시겠습니까?\n\n',
 			confirmText: '확인',
 			confirmCall: () => {
-				$FileDownLoad(file, '입사지원서', 'doc')
+				$FileDownLoad('/download/DEBRIX_RECRUIT.xlsx', 'DEBRIX_RECRUIT', 'xlsx')
 			}
 		})
 	}

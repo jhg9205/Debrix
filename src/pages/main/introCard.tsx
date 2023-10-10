@@ -241,7 +241,7 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 				<Button
 					size="medium"
 					color="inherit"
-					onClick={()=>navigate(`/Debrix/business?index=${props.index}`)}
+					onClick={()=>navigate(`/business?index=${props.index}`)}
 				>
 					더보기
 				</Button>

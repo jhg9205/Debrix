@@ -6,8 +6,9 @@ import subTileMobile from '@images/menu/bg-customer-m.png'
 import React from 'react'
 import MenuListbar from './menuListbar'
 import { PATH } from '@common/domain'
-import { Card, CardActionArea, CardContent, CardMedia, Fade, Typography } from '@mui/material'
+import {Card, CardActionArea, CardContent, CardMedia, Fade, Grid, Typography} from '@mui/material'
 import util01 from '@images/main/fileMain.jpg'
+import util02 from '@images/main/recruitImg.jpg'
 import companyProfilePdf from '@data/download/DEBRIX.pdf'
 import { alert } from '@utils/alert'
 import { ALERT } from '@common/const'
@@ -46,11 +47,18 @@ const Menu2 = () => {
 		let name = ''
 		let type = ''
 
-		//회사소개서 PDF
-		if (id == 'cardCompanyProfile') {
-			file = companyProfilePdf
-			name = '회사소개서'
-			type = 'pdf'
+
+		switch (id){
+			case 'cardCompanyProfile':
+				file = '/download/DEBRIX.pdf'
+				name = 'DEBRIX'
+				type = 'pdf'
+				break
+			case 'cardRecruitFile':
+				file = '/download/DEBRIX_RECRUIT.xlsx'
+				name = 'DEBRIX_RECRUIT'
+				type = 'xlsx'
+				break
 		}
 
 		alert.confirm({
@@ -99,18 +107,36 @@ const Menu2 = () => {
 				<div className="menu_title_contain" style={style}>
 					{subTitleTrans}
 					<div className="contain">
-						<Fade in={true} timeout={1500}>
-							<Card id="cardCompanyProfile" sx={{ maxWidth: 345 }} onClick={handleClick}>
-								<CardActionArea>
-									<CardMedia component="img" height="auto" image={util01} alt="회사소개서" />
-									<CardContent sx={{backgroundColor:'#fdd947'}}>
-										<Typography gutterBottom variant="h5" component="div">
-											데브릭스 - 회사소개서
-										</Typography>
-									</CardContent>
-								</CardActionArea>
-							</Card>
-						</Fade>
+						<Grid container style={{justifyContent:'center', width:'700px'}}>
+							<Grid item lg={6} >
+								<Fade in={true} timeout={1500}>
+									<Card id="cardCompanyProfile" sx={{ maxWidth: 345, height:'100%' }} onClick={handleClick}>
+										<CardActionArea>
+											<CardMedia component="img" height="auto" image={util01} alt="회사소개서" />
+											<CardContent sx={{backgroundColor:'#fdd947'}}>
+												<Typography gutterBottom variant="h5" component="div">
+													데브릭스 - 회사소개서
+												</Typography>
+											</CardContent>
+										</CardActionArea>
+									</Card>
+								</Fade>
+							</Grid>
+							<Grid item lg={6} >
+								<Fade in={true} timeout={1500}>
+									<Card id="cardRecruitFile" sx={{ maxWidth: 345, height:'288.266px' }} onClick={handleClick}>
+										<CardActionArea>
+											<CardMedia component="img" height="auto" image={util02} alt="입사지원서" />
+											<CardContent sx={{backgroundColor:'#fdd947'}}>
+												<Typography gutterBottom variant="h5" component="div">
+													데브릭스 - 입사지원서
+												</Typography>
+											</CardContent>
+										</CardActionArea>
+									</Card>
+								</Fade>
+							</Grid>
+						</Grid>
 					</div>
 				</div>
 			</div>

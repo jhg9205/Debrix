@@ -81,7 +81,7 @@ const HeaderPc2 = () => {
 			{/* 메인메뉴 */}
 			<div id="headerTopWrap" className="top header2" style={{ backgroundColor: 'rgba(255,255,255,0)' }}>
 				<div className="logoBox">
-					<Link to="/Debrix">
+					<Link to="/">
 						<img style={classes.img} src={logoWhite} alt="로고" />
 					</Link>
 				</div>

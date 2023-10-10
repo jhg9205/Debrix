@@ -48,8 +48,8 @@ const Menu3 = () => {
 
 		//회사소개서 PDF
 		if (id == 'cardCompanyProfile') {
-			file = companyProfilePdf
-			name = '회사소개서'
+			file = '/download/DEBRIX.pdf'
+			name = 'DEBRIX'
 			type = 'pdf'
 		}
 

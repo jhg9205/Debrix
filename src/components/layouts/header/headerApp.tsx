@@ -55,7 +55,7 @@ const HeaderApp = () => {
 							<HeaderDrawer toggleDrawer={toggleDrawer} />
 						</Drawer>
 						<Typography variant="h5" component="div" sx={{ flexGrow: 1 }} style={{ textAlign: 'center' }}>
-							<Link to="/Debrix">
+							<Link to="/">
 								<img src={logo} alt="dd" style={{width:'130px'}}/>
 							</Link>
 						</Typography>

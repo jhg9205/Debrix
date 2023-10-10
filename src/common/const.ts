@@ -5,7 +5,7 @@ export const VITE_APP_IMGS =
 /* ******************* WAS URL ******************* */
 const ROOT_URL: string = window.location.host
 const HTTP: string = 'http://'
-const SERVER: string = '211.59.68.82:8080'
+const SERVER: string = 'debrix.co.kr'
 const SERVER_URL: string = HTTP + SERVER
 
 export const URL = {

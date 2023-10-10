@@ -5,8 +5,8 @@ import { LogErr, LogInfo } from './functions'
 const _url: string = URL.SERVER_URL
 
 const _customAxios: AxiosInstance = axios.create({
-	baseURL: 'https://jhg9205.github.io/Debrix',
-	withCredentials: true,
+	baseURL: 'https://debrix.co.kr/',
+	// withCredentials: true,
 	headers: { Accept: '*/*' }
 })
 

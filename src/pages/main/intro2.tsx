@@ -38,7 +38,7 @@ export const Intro2 = () => {
 									<button
 										className="btn10"
 										onClick={() => {
-											navigate('/Debrix/company')
+											navigate('/company')
 										}}
 									>
 										OUR SERVICES
@@ -51,22 +51,24 @@ export const Intro2 = () => {
 								<Grid item lg={6} md={12} sx={{width:'100%'}}>
 									<EmojiFlagsIcon color='disabled'/>
 									<p className='sub_title'>SI/SM</p>
-									<p className='sub_cont'>고객사가 필요로 하는 IT 컨설팅, 기획, 개발, 구축, 운영 서비스를 통합적으로 제공합니다.</p>
+									<p className='sub_cont'>지속적 계발과 안정적인 기술 인력을 통해 컨설팅, 시스템 구축, 운영 전반의 최고의 서비스를 제공합니다.</p>
 								</Grid>
 								<Grid item lg={6} sx={{width:'100%'}}>
 									<HistoryToggleOffIcon color='disabled'/>
 									<p className='sub_title'>UI/UX CONSULTING / DEVELOPMENT</p>
-									<p className='sub_cont'>고객사가 필요로 하는 IT 컨설팅, 기획, 개발, 구축, 운영 서비스를 통합적으로 제공합니다.</p>
+									<p className='sub_cont'>사용자 경험을 통한 고객의 가치 성장에 기여합니다.</p>
+									<p className='sub_cont'>고객의 의도를 파악하여 기술적 인사이트를 제공합니다.</p>
 								</Grid>
 								<Grid item lg={6} sx={{width:'100%'}}>
 									<FavoriteBorderIcon color='disabled'/>
 									<p className='sub_title'>WEB DEVELOPMENT</p>
-									<p className='sub_cont'>고객사가 필요로 하는 IT 컨설팅, 기획, 개발, 구축, 운영 서비스를 통합적으로 제공합니다.</p>
+									<p className='sub_cont'>데브릭스 개발 방법론은 최적의 웹 서비스를 제공합니다.</p>
+									<p className='sub_cont'>데브릭스의 경험과 노하우가 고객의 요구, 그 이상을 충족시킵니다.</p>
 								</Grid>
 								<Grid item lg={6}  sx={{width:'100%'}}>
 									<VoiceChatIcon color='disabled'/>
 									<p className='sub_title'>AI/BIGDATA SOLUTION R&D</p>
-									<p className='sub_cont'>고객사가 필요로 하는 IT 컨설팅, 기획, 개발, 구축, 운영 서비스를 통합적으로 제공합니다.</p>
+									<p className='sub_cont'>4차산업혁명의 핵심 역량을 보유한 데브릭스가 AI / BIGDATA 시대의 솔루션이 되어 고객 만족을 극대화합니다.</p>
 								</Grid>
 							</Grid>
 						</Grid>
