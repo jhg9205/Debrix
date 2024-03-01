@@ -11,7 +11,7 @@ let currentPath = ''
 const HeaderPc2 = () => {
 	const navigate = useNavigate()
 	const location = useLocation()
-	const menuPath: string[] = [PATH.COMPANY00, PATH.BUSINESS00, PATH.PRCENTER00, PATH.RECRUIT00, PATH.CUSTOMER01]
+	const menuPath: string[] = [PATH.COMPANY00, PATH.BUSINESS00, PATH.PRCENTER00, PATH.RECRUIT00, PATH.CUSTOMER01, PATH.RESEARCH00]
 
 	useEffect(() => {
 		if (currentPath === location.pathname) {
@@ -100,18 +100,37 @@ const HeaderPc2 = () => {
 							<Link to={menuPath[1]}>사업분야</Link>
 							<ul className="submenu submenu2">
 								<div></div>
-								<Menu title="사업분야" menu={PATH.BUSINESS00} />
+								<li
+									onClick={()=>navigate(`/business?index=${0}`)}
+								>
+									<p>{"SI(시스템통합)"}</p>
+								</li>
+								<li
+									onClick={()=>navigate(`/business?index=${1}`)}
+								>
+									<p>{"Solution"}</p>
+								</li>
+								<li
+									onClick={()=>navigate(`/business?index=${4}`)}
+								>
+									<p>{"UI/UX"}</p>
+								</li>
+								<li
+									onClick={()=>navigate(`/business?index=${5}`)}
+								>
+									<p>{"R&D"}</p>
+								</li>
 							</ul>
 						</li>
-						{/*<li>*/}
-						{/*	<Link to={menuPath[2]}>연구분야</Link>*/}
-						{/*	<ul className="submenu submenu3">*/}
-						{/*		<div></div>*/}
-						{/*		<Menu title="연구분야" menu={PATH.RESEARCH00} />*/}
-						{/*		<Menu title="연구실적" menu={PATH.RESEARCH01} />*/}
-						{/*		/!*<Menu title="산업재산권 현황" menu={PATH.RESEARCH02} />*!/*/}
-						{/*	</ul>*/}
-						{/*</li>*/}
+						<li>
+							<Link to={menuPath[5]}>면허/특허</Link>
+							<ul className="submenu submenu1">
+								<div></div>
+								<Menu title="면허현황" menu={PATH.RESEARCH00} />
+								<Menu title="특허현황" menu={PATH.RESEARCH01} />
+								{/*<Menu title="산업재산권 현황" menu={PATH.RESEARCH02} />*/}
+							</ul>
+						</li>
 						<li>
 							<Link to={menuPath[2]}>홍보센터</Link>
 							<ul className="submenu submenu4">

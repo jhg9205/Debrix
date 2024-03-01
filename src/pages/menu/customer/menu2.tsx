@@ -42,7 +42,6 @@ const Menu2 = () => {
 
 	const handleClick = (event: React.MouseEvent) => {
 		const id = event.currentTarget.id
-
 		let file = ''
 		let name = ''
 		let type = ''
@@ -51,12 +50,12 @@ const Menu2 = () => {
 		switch (id){
 			case 'cardCompanyProfile':
 				file = '/download/DEBRIX.pdf'
-				name = 'DEBRIX'
+				name = 'DEBRIX_회사소개서'
 				type = 'pdf'
 				break
 			case 'cardRecruitFile':
 				file = '/download/DEBRIX_RECRUIT.xlsx'
-				name = 'DEBRIX_RECRUIT'
+				name = 'DEBRIX_입사지원서'
 				type = 'xlsx'
 				break
 		}

@@ -5,7 +5,7 @@ import { LogErr, LogInfo } from './functions'
 const _url: string = URL.SERVER_URL
 
 const _customAxios: AxiosInstance = axios.create({
-	baseURL: 'https://debrix.co.kr/',
+	baseURL: window.location.href.includes("www")?'https://www.debrix.co.kr':'https://debrix.co.kr',
 	// withCredentials: true,
 	headers: { Accept: '*/*' }
 })

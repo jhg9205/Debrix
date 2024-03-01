@@ -48,7 +48,7 @@ const SubFooter = (props: { size: string }) => {
 			<hr className="footLine" />
 			<ul>
 				<li>서울특별시 강남구 강남대로94길 67 ,3층(역삼동, 도연빌딩)</li>
-				<li>TEL : 02-553-2023 // EMAIL : wngk@debrix.co.kr</li>
+				<li>TEL : 02-553-2023 // EMAIL : debrix@debrix.kr</li>
 				<li>Copyright 2023 DEBRIX. All rights reserved.</li>
 			</ul>
 		</div>

@@ -71,7 +71,7 @@ export const Location = (props: { isMenu?: boolean }) => {
 										</li>
 										<li>
 											<span>이메일</span>
-											<span>wngk@debrix.co.kr</span>
+											<span>debrix@debrix.kr</span>
 										</li>
 										<li>
 											<span>전화</span>

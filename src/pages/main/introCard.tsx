@@ -285,8 +285,6 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 						<img src={SI2} alt='img2'/>
 						<img src={SI3} alt='img3'/>
 						<img src={SI4} alt='img4'/>
-						<img src={SI5} alt='img5'/>
-						<img src={SI6} alt='img5'/>
 						<img src={SI7} alt='img5'/>
 						<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
 					</>
@@ -294,12 +292,14 @@ const IntroSubCard = (props: { index: number; title: string }) => {
 					props.index == 1 ?
 						<>
 							<img src={SOLUTION2} alt='img1'/>
+							<img src={SI6} alt='img5'/>
 							<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
 						</>
 						:
 						props.index == 2 ?
 							<>
 								<img src={SOLUTION1} alt='img1'/>
+								<img src={SI5} alt='img5'/>
 								<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
 							</>
 							:

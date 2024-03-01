@@ -15,7 +15,7 @@ export const Intro2 = () => {
 	const countItem4 = useScrollCount(166, 1, 1500, 0, 800)
 	return (
 		<>
-			<Transition threshold={4} direction={'up'}>
+			<Transition threshold={2} direction={'up'}>
 				<div>
 					<Grid container className="intro-content">
 						<Grid item lg={6} sx={{ margin: '0 auto' }}>

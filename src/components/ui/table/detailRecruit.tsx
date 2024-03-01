@@ -19,10 +19,10 @@ export const DetailRecruit = (props: {
 	const handleClick = (event: React.MouseEvent) => {
 		alert.confirm({
 			type: ALERT.CONFIRM,
-			text: '입사지원서를\n 저장 하시겠습니까?\n\n',
+			text: 'DEBRIX_입사지원서를\n 저장 하시겠습니까?\n\n',
 			confirmText: '확인',
 			confirmCall: () => {
-				$FileDownLoad('/download/DEBRIX_RECRUIT.xlsx', 'DEBRIX_RECRUIT', 'xlsx')
+				$FileDownLoad('/download/DEBRIX_RECRUIT.xlsx', 'DEBRIX_입사지원서', 'xlsx')
 			}
 		})
 	}
@@ -66,7 +66,7 @@ export const DetailRecruit = (props: {
 			</div>
 			<div style={{ fontSize: '15px', textAlign: 'center', fontWeight: '500', color: '#7f7f7f' }}>
 				<p>본 채용에 관한 문의 사항은</p>
-				<p>경영지원팀 메일(hr@debrix.co.kr)로 부탁 드립니다.</p>
+				<p>인사팀 메일(hr@debrix.co.kr)로 부탁 드립니다.</p>
 			</div>
 			<Button
 				id="recruitFile"

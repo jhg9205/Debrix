@@ -1,4 +1,16 @@
-import {Box, Divider, Fab, Fade, Grid, IconButtonProps, List, ListItem, ListItemText, styled} from '@mui/material'
+import {
+	Box, Card,
+	Divider,
+	Fab,
+	Fade,
+	Grid,
+	IconButtonProps,
+	List,
+	ListItem,
+	ListItemText,
+	styled,
+	TextField
+} from '@mui/material'
 import bus0 from '@images/menu/analyze.jpg'
 import bus1 from '@images/menu/RnD.jpg'
 import bus2 from '@images/menu/uiux2.jpg'
@@ -41,6 +53,7 @@ import RND3 from "@images/main/RND3.jpg"
 import RND4 from "@images/main/RND4.jpg"
 
 export const BusinessDetail = () => {
+	const location = useLocation()
 	const title = [
 		'01. SI(시스템통합)',
 		'02. Solution',
@@ -65,7 +78,6 @@ export const BusinessDetail = () => {
 		behavior: 'smooth',
 		block: 'center'
 	}
-	const location = useLocation()
 	const handleClickOpen = (num:number) => {
 		setTemp(num)
 		setTitleCon(title[num])
@@ -123,22 +135,36 @@ export const BusinessDetail = () => {
 					</Grid>
 					<Grid item lg={6} className="intro-text-right">
 						<BusinessText index={0} threshold={-1} direction={'left'} />
-						<button
-							className="btn10"
-							onClick={()=>handleClickOpen(0)}
-						>
-							VIEW MORE
-						</button>
+						<Transition threshold={-1} direction={'left'}>
+							<TransitionFade threshold={-1}>
+								<div>
+									<button
+										className="btn10"
+										onClick={()=>handleClickOpen(0)}
+									>
+										VIEW MORE
+									</button>
+									<p style={{fontSize:'20px'}}>관련문의 : 정성현 책임 / shjung@debrix.co.kr</p>
+								</div>
+							</TransitionFade>
+						</Transition>
 					</Grid>
 					<Grid item lg={6} className="intro-text-left">
 						<div ref={index1}>
 							<BusinessText index={1} threshold={3} direction={'right'} />
-							<button
-								className="btn10"
-								onClick={()=>handleClickOpen(1)}
-							>
-								VIEW MORE
-							</button>
+							<Transition threshold={3} direction={'right'}>
+								<TransitionFade threshold={3}>
+									<div>
+										<button
+											className="btn10"
+											onClick={()=>handleClickOpen(1)}
+										>
+											VIEW MORE
+										</button>
+										<p style={{fontSize:'20px'}}>관련문의 : 정철희 이사 / chjung@debrix.co.kr</p>
+									</div>
+								</TransitionFade>
+							</Transition>
 						</div>
 					</Grid>
 					<Grid item lg={6} className="intro-img-pc">
@@ -151,22 +177,36 @@ export const BusinessDetail = () => {
 					</Grid>
 					<Grid item lg={6} className="intro-text-right">
 						<BusinessText index={2} threshold={7} direction={'left'} />
-						<button
-							className="btn10"
-							onClick={()=>handleClickOpen(2)}
-						>
-							VIEW MORE
-						</button>
+						<Transition threshold={7} direction={'left'}>
+							<TransitionFade threshold={7}>
+								<div>
+									<button
+										className="btn10"
+										onClick={()=>handleClickOpen(2)}
+									>
+										VIEW MORE
+									</button>
+								<p style={{fontSize:'20px'}}>관련문의: R&D / lab@debrix.kr</p>
+								</div>
+							</TransitionFade>
+						</Transition>
 					</Grid>
 					<Grid item lg={6} className="intro-text-left">
 						<div ref={index3}>
 							<BusinessText index={3} threshold={13} direction={'right'} />
-							<button
-								className="btn10"
-								onClick={()=>handleClickOpen(3)}
-							>
-								VIEW MORE
-							</button>
+							<Transition threshold={13} direction={'right'}>
+								<TransitionFade threshold={13}>
+									<div>
+										<button
+											className="btn10"
+											onClick={()=>handleClickOpen(3)}
+										>
+											VIEW MORE
+										</button>
+										<p style={{fontSize:'20px'}}>관련문의: R&D / lab@debrix.kr</p>
+									</div>
+								</TransitionFade>
+							</Transition>
 						</div>
 					</Grid>
 					<Grid item lg={6} className="intro-img-pc">
@@ -216,6 +256,7 @@ export const BusinessDetail = () => {
 						>
 							VIEW MORE
 						</button>
+						<p style={{fontSize:'20px'}}>관련문의 : 정성현 책임 / shjung@debrix.co.kr</p>
 					</Grid>
 					<Grid item md={12}>
 						<div ref={index1}>
@@ -230,6 +271,7 @@ export const BusinessDetail = () => {
 						>
 							VIEW MORE
 						</button>
+						<p style={{fontSize:'20px'}}>관련문의 : 정철희 이사 / chjung@debrix.co.kr</p>
 					</Grid>
 					<Grid item md={12}>
 						<div ref={index2}>
@@ -244,6 +286,7 @@ export const BusinessDetail = () => {
 						>
 							VIEW MORE
 						</button>
+						<p style={{fontSize:'20px'}}>관련문의: R&D / lab@debrix.kr</p>
 					</Grid>
 					<Grid item md={12}>
 						<div ref={index3}>
@@ -258,6 +301,7 @@ export const BusinessDetail = () => {
 						>
 							VIEW MORE
 						</button>
+						<p style={{fontSize:'20px'}}>관련문의: R&D / lab@debrix.kr</p>
 					</Grid>
 					{/*<Grid item md={12}>*/}
 					{/*	<div ref={index4}>*/}
@@ -319,8 +363,6 @@ export const BusinessDetail = () => {
 						<img src={SI2} alt='img2'/>
 						<img src={SI3} alt='img3'/>
 						<img src={SI4} alt='img4'/>
-						<img src={SI5} alt='img5'/>
-						<img src={SI6} alt='img5'/>
 						<img src={SI7} alt='img5'/>
 						<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
 					</>
@@ -328,7 +370,9 @@ export const BusinessDetail = () => {
 						temp == 1 ?
 					<>
 						<img src={SOLUTION1} alt='img1'/>
+						<img src={SI5} alt='img5'/>
 						<img src={SOLUTION2} alt='img1'/>
+						<img src={SI6} alt='img5'/>
 						<img src={SOLUTION3} alt='img1'/>
 						<img src={SUCCESS} alt='img5' style={{width:'100%', padding:'0'}} onClick={handleClose}/>
 					</>
@@ -402,7 +446,7 @@ export const BusinessText = (props: { index: number ; threshold: number; directi
 			break
 		case 1:
 			description = [
-				'*  HPE Ezmeral Big-Data 플랫폼/AI 플랫폼 (HPE EZMERAL Data Fabric)',
+				'*  HPE Ezmeral Big-Data 플랫폼 (HPE EZMERAL Data Fabric)',
 				'*  HPE Ezmeral AI 플랫폼 (HPE EZMERAL ML OPS Platform)',
 				'*  스마트 안전보건관리 솔루션'
 			]
@@ -460,7 +504,7 @@ export const BusinessText = (props: { index: number ; threshold: number; directi
 			break
 		case 2:
 			descriptionMain = [
-				'*  HPE Ezmeral Big-Data 플랫폼/AI 플랫폼 (HPE EZMERAL Data Fabric)',
+				'*  HPE Ezmeral Big-Data 플랫폼 (HPE EZMERAL Data Fabric)',
 				'*  대용량 분산 데이터 처리 기술 제공',
 				'*  빅데이터 시스템의 성과분석',
 				'*  Ezmeral Data Fabric Platform, Container Platform'

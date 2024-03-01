@@ -17,17 +17,18 @@ import HelpIcon from '@mui/icons-material/Help'
 import GroupAddIcon from '@mui/icons-material/GroupAdd'
 import HeadphonesIcon from '@mui/icons-material/Headphones'
 import { ExpandLess, ExpandMore } from '@mui/icons-material'
-import { Link } from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { PATH } from '@common/domain'
 
 const HeaderDrawer = ({ toggleDrawer }: any) => {
+	const navigate = useNavigate()
 	const [intro, setIntro] = React.useState(false)
 	const [business, setBusiness] = React.useState(false)
 	const [research, setResearch] = React.useState(false)
 	const [pr, setPr] = React.useState(false)
 	const [employ, setEmploy] = React.useState(false)
 	const [help, setHelp] = React.useState(false)
-	const companyLink = [PATH.COMPANY00, PATH.COMPANY01, PATH.COMPANY02, PATH.COMPANY03, PATH.COMPANY04]
+	const companyLink = [PATH.COMPANY00, PATH.COMPANY04]
 	const businessLink = [PATH.BUSINESS00, PATH.BUSINESS01]
 	const researchLink = [PATH.RESEARCH00, PATH.RESEARCH01]
 	const prCenterLink = [PATH.PRCENTER00, PATH.PRCENTER01, PATH.PRCENTER02]
@@ -84,9 +85,52 @@ const HeaderDrawer = ({ toggleDrawer }: any) => {
 				</ListItemButton>
 				<Collapse in={business} timeout="auto" unmountOnExit>
 					<List component="div" disablePadding>
-						{['사업분야'].map((text, index) => (
+						<ListItem disablePadding>
+							<ListItemButton sx={{pl:4}} component={"button"} onClick={()=>navigate(`/business?index=${0}`)}>
+								<ListItemIcon>
+									<RecordVoiceOverIcon/>
+								</ListItemIcon>
+								<ListItemText primary={'SI(시스템통합)'}/>
+							</ListItemButton>
+						</ListItem>
+						<ListItem disablePadding>
+							<ListItemButton sx={{pl:4}} component={"button"} onClick={()=>navigate(`/business?index=${1}`)}>
+								<ListItemIcon>
+									<RecordVoiceOverIcon/>
+								</ListItemIcon>
+								<ListItemText primary={'Solution'}/>
+							</ListItemButton>
+						</ListItem>
+						<ListItem disablePadding>
+							<ListItemButton sx={{pl:4}} component={"button"} onClick={()=>navigate(`/business?index=${4}`)}>
+								<ListItemIcon>
+									<RecordVoiceOverIcon/>
+								</ListItemIcon>
+								<ListItemText primary={'UI/UX'}/>
+							</ListItemButton>
+						</ListItem>
+						<ListItem disablePadding>
+							<ListItemButton sx={{pl:4}} component={"button"} onClick={()=>navigate(`/business?index=${5}`)}>
+								<ListItemIcon>
+									<RecordVoiceOverIcon/>
+								</ListItemIcon>
+								<ListItemText primary={'R&D'}/>
+							</ListItemButton>
+						</ListItem>
+					</List>
+				</Collapse>
+				<ListItemButton onClick={() => setResearch(!research)}>
+					<ListItemIcon>
+						<EnergySavingsLeafIcon />
+					</ListItemIcon>
+					<ListItemText primary="면허/특허" />
+					{research ? <ExpandLess /> : <ExpandMore />}
+				</ListItemButton>
+				<Collapse in={research} timeout="auto" unmountOnExit>
+					<List component="div" disablePadding>
+						{['면허현황','특허현황'].map((text, index) => (
 							<ListItem key={text} disablePadding>
-								<ListItemButton sx={{ pl: 4 }} component={Link} to={businessLink[index]}>
+								<ListItemButton sx={{ pl: 4 }} component={Link} to={researchLink[index]}>
 									<ListItemIcon>{index === 0 ? <BiotechIcon /> : index === 1 ? <EmojiEventsIcon /> : <SummarizeIcon />}</ListItemIcon>
 									<ListItemText primary={text} />
 								</ListItemButton>
@@ -94,25 +138,6 @@ const HeaderDrawer = ({ toggleDrawer }: any) => {
 						))}
 					</List>
 				</Collapse>
-				{/*<ListItemButton onClick={() => setResearch(!research)}>*/}
-				{/*	<ListItemIcon>*/}
-				{/*		<EnergySavingsLeafIcon />*/}
-				{/*	</ListItemIcon>*/}
-				{/*	<ListItemText primary="연구개발" />*/}
-				{/*	{research ? <ExpandLess /> : <ExpandMore />}*/}
-				{/*</ListItemButton>*/}
-				{/*<Collapse in={research} timeout="auto" unmountOnExit>*/}
-				{/*	<List component="div" disablePadding>*/}
-				{/*		{['연구분야', '연구실적'].map((text, index) => (*/}
-				{/*			<ListItem key={text} disablePadding>*/}
-				{/*				<ListItemButton sx={{ pl: 4 }} component={Link} to={researchLink[index]}>*/}
-				{/*					<ListItemIcon>{index === 0 ? <BiotechIcon /> : index === 1 ? <EmojiEventsIcon /> : <SummarizeIcon />}</ListItemIcon>*/}
-				{/*					<ListItemText primary={text} />*/}
-				{/*				</ListItemButton>*/}
-				{/*			</ListItem>*/}
-				{/*		))}*/}
-				{/*	</List>*/}
-				{/*</Collapse>*/}
 				<Divider />
 				<ListItemButton onClick={() => setPr(!pr)}>
 					<ListItemIcon>

@@ -41,7 +41,6 @@ const Menu3 = () => {
 
 	const handleClick = (event: React.MouseEvent) => {
 		const id = event.currentTarget.id
-
 		let file = ''
 		let name = ''
 		let type = ''
@@ -49,7 +48,7 @@ const Menu3 = () => {
 		//회사소개서 PDF
 		if (id == 'cardCompanyProfile') {
 			file = '/download/DEBRIX.pdf'
-			name = 'DEBRIX'
+			name = 'DEBRIX_회사소개서'
 			type = 'pdf'
 		}
 

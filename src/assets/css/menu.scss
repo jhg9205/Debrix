@@ -556,6 +556,18 @@
 	.menu_title_contain {
 		text-align: center;
 	}
+	.MuiCard-root {
+		border-radius: 15px;
+		transition: all 0.25s linear !important;
+		button {
+			color: #fff;
+			background-color: rgba(50, 64, 90, 0.7);
+		}
+	}
+	.MuiCard-root:hover {
+		transform: translateY(-5px);
+		box-shadow: 0px 5px 5px 0px rgba(142, 142, 142, 0.8);
+	}
 	.intro-detail {
 		width: 100%;
 		padding: 70px 0;
@@ -636,7 +648,7 @@
 				width: 150px;
 				margin: 10px auto;
 			}
-			span {
+			span, p {
 				font-size: 20px !important;
 				line-height: 20px;
 			}
@@ -660,7 +672,7 @@
 				width: 100px;
 				margin: 10px auto;
 			}
-			span {
+			span, p {
 				font-size: 15px !important;
 				line-height: 20px;
 				margin: 0 auto;
@@ -1021,5 +1033,51 @@
 		img {
 			width: 100%;
 		}
+	}
+}
+
+//특허및 수상실정
+#patentLayout {
+	.menu_title_contain {
+		text-align: center;
+	}
+
+	.contain {
+		padding: 70px 0px;
+		background-color: #ffffff;
+		display: flex;
+		margin-top: 50px;
+		justify-content: center;
+
+		.imagelist_warp {
+			display: flex;
+			justify-content: center;
+			overflow: hidden;
+
+			.MuiImageList-root {
+				overflow: hidden;
+				@include mobile {
+					grid-template-columns: repeat(1, 1fr) !important;
+				}
+			}
+			.MuiImageListItemBar-title {
+				font-size: 1.2rem;
+				font-weight: bold;
+			}
+			#patentImgList {
+				width: 350px;
+				height: auto;
+			}
+			#patentImgList:hover {
+				transform: scale(1.05);
+				transition: transform 0.5s;
+			}
+		}
+	}
+
+	.MuiImageListItem-root {
+		border: 2px solid #ccc;
+		padding: 20px 20px 50px 20px;
+		background-color: #fff;
 	}
 }
