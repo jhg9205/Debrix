@@ -74,28 +74,28 @@ const Menu1 = () => {
 
 	const itemData = [
 		{
-			key: '1',
-			img: REQ1_1,
+			key: '0',
+			img: REQ1_2,
 			title: '사업자 등록증'
 		},
 		{
-			key: '2',
+			key: '1',
 			img: REQ2_1,
 			title: '소프트웨어사업자확인서'
 		},
 		{
-			key: '3',
+			key: '2',
 			img: REQ3,
 			title: '중소기업확인서'
 		},
 		{
-			key: '4',
+			key: '3',
 			img: REQ4,
 			title: '벤처기업확인서'
 		}
 	]
 
-/*	const onImageClick = (event: React.MouseEvent) => {
+	const onImageClick = (event: React.MouseEvent) => {
 		const src = event.currentTarget.querySelector('img')?.src
 
 		let width: string = ''
@@ -108,14 +108,14 @@ const Menu1 = () => {
 				width = '450px'
 				break
 			case 'sm':
-				width = '400px'
+				width = '350px'
 				break
 		}
 
 		const popup = <img src={src} style={{ width: width, height: 'auto' }} />
 
 		dispatch(setPopupShow(true, popup))
-	}*/
+	}
 
 	const subTitleTrans = (
 		<Transition threshold={-1} direction={'up'} isEndListener={true} callFunc={callEndFunc} time={1500}>
@@ -152,7 +152,7 @@ const Menu1 = () => {
 							<div className="imagelist_warp">
 								<ImageList cols={3} gap={20}>
 									{itemData.map(item => (
-										<ImageListItem key={item.key} style={{ border: '1px sold #ccc', cursor: 'pointer' }} onClick={()=>handleClickOpen(Number(item.key))}>
+										<ImageListItem key={item.key} style={{ border: '1px sold #ccc', cursor: 'pointer' }} onClick={onImageClick}>
 											<FadeImg id="patentImgList" pc={`${item.img}`} delay={1500} isContent={true} />
 											<ImageListItemBar title={item.title} position="bottom" />
 										</ImageListItem>
@@ -163,59 +163,6 @@ const Menu1 = () => {
 					</div>
 				</div>
 			</div>
-			<Dialog
-				// fullScreen
-				open={open}
-				maxWidth='xl'
-				onClose={handleClose}
-				TransitionComponent={TransitionCustom}
-				className='dialog'
-				scroll='paper'
-			>
-				<AppBar sx={{ position: 'relative', backgroundColor:'rgba(44, 44, 44, 0.9)' }} id='modal_bar'>
-					<Toolbar>
-						<IconButton
-							edge="start"
-							color="inherit"
-							onClick={handleClose}
-							aria-label="close"
-						>
-							<CloseIcon />
-						</IconButton>
-						<Typography sx={{ ml: 3, flex: 1 }} variant="h5" component="div">
-							{titleCon}
-						</Typography>
-					</Toolbar>
-				</AppBar>
-				{temp == 1 ?
-					<>
-						<img src={REQ1_1} alt='img1'/>
-						<img src={REQ1_2} alt='img2'/>
-					</>
-					:
-					temp == 2 ?
-						<>
-							<img src={REQ2_1} alt='img1'/>
-							<img src={REQ2_2} alt='img2'/>
-						</>
-						:
-						temp == 3 ?
-							<>
-								<img src={REQ3} alt='img1'/>
-							</>
-							:
-							<>
-								<img src={REQ4} alt='img1'/>
-							</>
-				}
-				<Fade in={trigger}>
-					<Box onClick={handleClick} role="presentation" sx={{ position: 'fixed', bottom: 30, right: 30 }}>
-						<Fab size="large" aria-label="scroll back to top">
-							<KeyboardArrowUpIcon />
-						</Fab>
-					</Box>
-				</Fade>
-			</Dialog>
 		</Layout>
 	)
 }

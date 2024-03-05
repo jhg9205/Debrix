@@ -64,7 +64,7 @@ const Menu2 = () => {
 				width = '450px'
 				break
 			case 'sm':
-				width = '400px'
+				width = '350px'
 				break
 		}
 
