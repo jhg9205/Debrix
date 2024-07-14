@@ -10,7 +10,7 @@ const defaultStyle = {
 	left: '50%',
 	transform: 'translate(-50%, -50%)',
 	bgcolor: 'background.paper',
-	border: '2px solid #F00',
+	border: '3px solid grey',
 	boxShadow: 24
 }
 const styles: {}[] = [
